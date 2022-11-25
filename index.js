@@ -1,26 +1,18 @@
-// Code your solutions in this file
+// function writeCards()
 
-// To fix this
-
-// function writeCards(arr, event) {
-//     for (let i = 0; i < arr.length; i++){
-
-//         const thankyouCard = [];
-//         thankyouCard.slice(0, 0, `Thank you, ${arr[i]}, for the ${event}`)]
-//         console.log(thankyouCard);
-//     }
-//     return arr;
-// }
-
-
-// console.log(writeCards(["Guadalupe", "Ollie", "Aki"], "wonderful surprise gift"));
-
-function countDown() {
-    let i = 10;
-    while (i <= 0) {
-        console.log(i);
-        i--;
+function writeCards(arr, eventName) {
+     let messages = [];
+    for (let i = 0; i < arr.length; i++){
+        messages.push(`Thank you, ${arr[i]}, for the wonderful ${eventName} gift!`);
     }
-
+    return messages;
 }
-console.log(countDown());
+console.log(writeCards(["Guadalupe", "Ollie", "Aki"], "surprise"))
+
+function countDown(num){
+    while (num >= 0) {
+        console.log(num--);
+    }
+}
+
+// console.log(countDown(10))
